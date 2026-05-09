@@ -699,14 +699,14 @@ constructor ( object, preview ) {
 		let keybind = Keybinds.extra.preview_scroll_zoom.keybind;
 		let enabled = keybind.isTriggered(event);
 
-		if (!enabled && !event.ctrlKey && !event.shiftKey && !event.metaKey && Math.abs(event.deltaY) != 100) {
-			pan( -event.deltaX, -event.deltaY );
+		// if (!enabled && !event.ctrlKey && !event.shiftKey && !event.metaKey && Math.abs(event.deltaY) != 100) {
+		// 	pan( -event.deltaX, -event.deltaY );
 
-			scope.update();
-			scope.updateSceneScale();
-		}
+		// 	scope.update();
+		// 	scope.updateSceneScale();
+		// }
 
-		if (!enabled) return;
+		// if (!enabled) return;
 
 		event.preventDefault();
 		event.stopPropagation();
